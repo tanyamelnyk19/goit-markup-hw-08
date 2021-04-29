@@ -1,0 +1,17 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.section--dark-bg {
+  background-color: var(--dark-bg-color);
+}

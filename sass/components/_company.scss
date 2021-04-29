@@ -1,0 +1,22 @@
+.company__item {
+  --grid__item: 6;
+}
+
+.company__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--company-logo-color);
+  border-radius: 4px;
+  fill: var(--company-logo-color);
+
+  transition: fill var(--duration) var(--timing-function), border-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

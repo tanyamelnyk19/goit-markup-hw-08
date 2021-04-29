@@ -1,0 +1,31 @@
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav__link {
+  color: var(--main-text-color);
+
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.auth-nav__icon-box {
+  display: inline-flex;
+  align-items: center;
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
