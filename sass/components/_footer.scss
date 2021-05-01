@@ -6,8 +6,13 @@
 .footer__container {
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
     justify-content: space-between;
     text-align: left;
   }
@@ -15,8 +20,6 @@
 
 .footer__contacts-box,
 .footer__join-box {
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((50% - 45px) / 2);
   }
@@ -43,10 +46,14 @@
 .footer__title {
   margin-bottom: 20px;
   color: var(--dark-bg-text-color);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__form-box {
-  // flex-basis: calc(50% - 15px);
   @media screen and (min-width: 1200px) {
     flex-basis: calc(50% - 15px);
   }

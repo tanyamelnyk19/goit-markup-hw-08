@@ -1,13 +1,16 @@
 .form {
-  // display: flex;
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
 .form__label {
-  // margin-right: 12px;
   @media screen and (min-width: 1200px) {
     margin-right: 12px;
   }
@@ -31,9 +34,8 @@
   }
 
   @media screen and (min-width: 480px) {
-    max-width: 450px;
+    width: 450px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-bottom: 0;
@@ -42,4 +44,11 @@
 .form__icon {
   display: inline-block;
   margin-left: 10px;
+}
+
+.form__button {
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
