@@ -5,4 +5,59 @@
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+// кнопка для моб меню
+.main-nav__icon-close {
+  display: none;
+  fill: var(--title-color);
+  transition: fill var(--duration) var(--timing-function);
+
+  .main-nav__mob-button:hover &,
+  .main-nav__mob-button:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.main-nav__mob-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+
+  &.is-open .main-nav__icon-close {
+    display: block;
+  }
+  &.is-open .main-nav__icon-mob-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__icon-mob-menu {
+  fill: var(--light-bg-text-color);
+  transition: fill var(--duration) var(--timing-function);
+
+  .main-nav__mob-button:hover &,
+  .main-nav__mob-button:focus & {
+    fill: var(--accent-color);
+  }
 }

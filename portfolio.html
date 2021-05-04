@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<!-- <header class="header">
+<header class="header">
     <div class="container">
         <nav class="main-nav">
             <a class="logo" href="./" lang="en">
@@ -50,9 +50,50 @@
                     </a>
                 </li>
             </ul>
+
+            <button type="button" class="main-nav__mob-button" aria-expanded="false" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="main-nav__icon-mob-menu" href="./images/icons.svg#icon-mob-menu"></use>
+                    <use class="main-nav__icon-close" href="./images/icons.svg#icon-close_mob"></use>
+                </svg>
+            </button>
+            <!--мобильное меню-->
+            <div class="mob-menu" data-menu>
+                <ul class="list mob-menu__list">
+                    <li class="mob-menu__item"><a class="link mob-menu__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="mob-menu__item"><a class="link mob-menu__link mob-menu__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакты</a></li>
+                </ul>
+                <div class="list mob-menu__contacts">
+                    <ul class="list mob-menu__contacts-list">
+                        <li class="mob-menu__item">
+                            <a class="link mob-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="link mob-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="list mob-menu__social-list">
+                        <li class="mob-menu__social-item">
+                            <a class="link mob-menu__social-link" href="">Instagram</a>
+                        </li>
+                        <li class="mob-menu__social-item">
+                            <a class="link mob-menu__social-link" href="">Twitter</a>
+                        </li>
+                        <li class="mob-menu__social-item">
+                            <a class="link mob-menu__social-link" href="">Facebook</a>
+                        </li>
+                        <li class="mob-menu__social-item">
+                            <a class="link mob-menu__social-link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </div>
-</header> -->
+</header>
 
     <main>
         <section class="section">
@@ -302,6 +343,7 @@
     
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     </body>
     
     </html>
